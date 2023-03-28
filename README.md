@@ -182,6 +182,6 @@ I would like to thank Microverse for providing the reading materials that aided 
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/ohyajk/my-blog-app/blob/Dev/LICENSE) licensed.
+This project is [MIT](https://github.com/ohyajk/my-blog-app/blob/Add-Data-Model/LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
