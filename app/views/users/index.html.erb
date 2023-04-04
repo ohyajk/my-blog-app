@@ -1,19 +1,18 @@
-<main>
-  <div class="list">
+<section class="p-sm mb-section">
+  <ul class="container-user d-flex-2">
     <% @users.each do |user| %>
-      <div class="user">  
-        <%= link_to user_path(user.id) do %>
-          <div class="user_details">
-            <div class="user_photo">
-              <%= image_tag("mybaby.png") %>
-            </div>
-            <div class="user_name">
-              <h2><%= user.name %></h2>
-              <h4>Number of posts: <%= user.post_counter %></h4>
-            </div>
-          </div>
-        <% end %>
-      </div>
+      <li class="user-li d-flex border">
+        <div class="img-con">
+          <img class="av" src="<%= user.photo %>" alt="User Avatar" />
+        </div>
+
+        <div class="user-bdy d-flex">
+          <a class="user-pc d-flex" title="view user details" href="/users/<%= user.id %>">
+            <h2 class="fs-sm"><%= user.name%></h2>
+            <p class="post-count">Number of posts: <%= user.posts_counter || 0 %> </p>
+          </a>
+        </div>
+      </li>
     <% end %>
-  </div>
-</main>
+  </ul>
+</section>

@@ -1,24 +1,18 @@
-<main>
-  <div class="list">
-    <div class="post_details">
-      <div class="post_details_title">
-        <h3><%= @post.title %> , by <%= @user.name %></h3>
-        <h4><span>Comment <%= @post.comments_counter %></span> <span>|</span> <span>Likes <%= @post.likes_counter %></span></h4>
-      </div>
-
-      <div class="post_details_text">
-        <p><%= @post.text %></p>
-      </div>
-      <hr>
-      <div class="user_comments">
-        <% if @comments.length == 0 %>
-          <p>No comments for now. Be the first to comment</p>
-        <% else %>
-          <% @comments.each do |comment| %>
-            <p><%= comment.user.name%>: <%= comment.text%></p>
-          <%end%>
-        <% end %>
+<section class="p-sm mb-section">
+  <div class="post-detail border d-flex-2">
+    <div class="post-detail-bdy d-flex">
+      <h3>Post #<%= @post.id%> by <%= @post.author.name %></h3>
+      <div class="d-flex mb-sm2">
+        <span class="comments mr-sm sp-fs">Comments: <%= @post.comments_counter || 0%>, </span>
+        <span class="likes sp-fs">Likes: <%= @post.likes_counter || 0 %> </span>
       </div>
     </div>
+    <p class="post-text color"> <%= @post.text %> </p>
   </div>
-</main>
+  <ul class="comment d-flex-2 border">
+    Comments:
+    <% @comments.each do |comment| %>
+      <li class="user-bio_div d-flex-2"><%= comment.author.name%>: <%= comment.text %></li>
+    <% end %>
+  </ul>
+</section>

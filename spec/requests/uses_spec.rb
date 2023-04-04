@@ -1,9 +1,9 @@
 require 'rails_helper'
 
-RSpec.describe '/posts', type: :request do
+RSpec.describe '/users', type: :request do
   describe 'GET /index' do
     before(:example) do
-      get '/users/1/posts'
+      get '/users'
     end
     it 'renders a successful response' do
       expect(response).to be_successful
@@ -12,13 +12,13 @@ RSpec.describe '/posts', type: :request do
       expect(response).to render_template(:index)
     end
     it 'contain the placeholder text' do
-      expect(response.body).to include('All the posts by selected user')
+      expect(response.body).to include('All the users')
     end
   end
 
   describe 'GET /show' do
     before(:example) do
-      get '/users/1/posts/1'
+      get '/users/1'
     end
     it 'renders a successful response' do
       expect(response).to be_successful
@@ -27,7 +27,7 @@ RSpec.describe '/posts', type: :request do
       expect(response).to render_template(:show)
     end
     it 'contain the placeholder text' do
-      expect(response.body).to include('Selected posts by selected user')
+      expect(response.body).to include('Selected the users')
     end
   end
 end
