@@ -81,41 +81,64 @@ After you're finished please remove all the comments and instructions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
 ## 💻 Getting Started <a name="getting-started"></a>
+
+> How to get started and make use of this project.
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: 
 
-- Mac or PC
-- Install Ruby
-- Understanding OOP principles
+```
+Visual Studio Code
+Ruby
+PostgreSQL
+```
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder
 
-```sh
-  cd your-folder
-  https://github.com/ohyajk/my-blog-app.git
+```
+cd your-folder
+git clone https://github.com/ohyajk/my-blog-app.git
+cd my-blog-app
 ```
 
 ### Install
 
-Install this project with:
+Install all dependencies to this project with:
 
-- GitHub Actions
-- Linters
-  - Rubocop
-- Ruby On Rails
+```
+bundle install
+rails db:create
+rails db:migrate
+```
 
 ### Usage
 
-- Run the app with `rails c` in the terminal from the root folder of the project.
+To run the project, execute the following command:  
+
+```
+rails server
+```
+
+### Run tests
+
+To run tests, run the following command: 
+
+```
+rspec spec
+```
+
+### Deployment
+
+You can use any deployment service to deploy the application.
+
+- [Render](https://render.com/)
+- [Heroku](https://www.heroku.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
