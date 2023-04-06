@@ -124,7 +124,7 @@ To run tests, run the following command:
 rspec spec
 ```
 
-### Deployment
+### Deployment 
 
 You can use any deployment service to deploy the application.
 
