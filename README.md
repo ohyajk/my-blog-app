@@ -144,6 +144,11 @@ You can use any deployment service to deploy the application.
 - GitHub: [@ohyajk](https://github.com/ohyajk)
 - LinkedIn: [@ohyajk](https://www.linkedin.com/in/ohyajk/)
 
+👤 **Chukwuma Paul Mosanya**
+
+- GitHub: [@blase147](https://github.com/blase147)
+- LinkedIn: [@chukwuma-mosanya](https://www.linkedin.com/in/chukwuma-mosanya)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
